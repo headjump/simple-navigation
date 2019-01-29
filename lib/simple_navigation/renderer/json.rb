@@ -17,6 +17,7 @@ module SimpleNavigation
 
         item_container.items.map do |item|
           {
+            key: item.key,
             items: hash_render(item.sub_navigation),
             name: item.name,
             selected: item.selected?,
